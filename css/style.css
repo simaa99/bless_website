@@ -1,0 +1,1567 @@
+@font-face {
+  font-family: "Callient";
+  src: url(../font/fonnts.com-Callient.ttf);
+  font-weight: 400;
+}
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  direction: ltr;
+  font-family: "Abhaya Libre", serif;
+  line-height: 1.6;
+  background: linear-gradient(
+    to bottom,
+    #ffffff 15%,
+    #3d7687 30%,
+    #000000 47%,
+    #343434 72%,
+    #3d7687 99%
+  );
+  color: #222222;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header styling */
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+  background-color: #282828;
+  padding: 5px 0px;
+  text-align: left;
+  margin-bottom: 20px;
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+  z-index: 100;
+}
+.wetrust-loop-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  animation: translateLoop 20s linear infinite;
+}
+
+.wetrust-content {
+  display: flex;
+  flex-direction: row;
+  flex: none;
+  z-index: 500;
+  white-space: nowrap;
+  align-items: center;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+/* Text and dash styling */
+.wetrust-text,
+.wetrust-dash {
+  display: inline-block;
+  padding: 0 2px;
+  color: #c8d1d7; /* Medium gray text */
+  background-color: #282828;
+}
+
+/* Animation for looping text */
+@keyframes translateLoop {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+/*Styling Hero Section*/
+.hero-text {
+  font-size: 5.625rem;
+  line-height: 5rem;
+  font-weight: 700;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.bakkoura-text {
+  color: #000000;
+  font-family: "Callient", serif;
+  font-size: 9.1rem;
+  font-weight: 400;
+  line-height: 3.75rem;
+  opacity: 10%;
+  transform: rotate(-4deg);
+}
+
+.btn-order {
+  padding: 0.875rem 1.375rem;
+  background: linear-gradient(
+    175deg,
+    #ffe7d1 0%,
+    #c89770 33%,
+    #f4cfad 67%,
+    #905e3f 100%
+  );
+  box-shadow: inset 0px -2px 2px 0px #d8ad86;
+  border: none;
+  border-radius: 2.5rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.btn-order:hover {
+  background: linear-gradient(
+    175deg,
+    #905e3f 0%,
+    #f4cfad 33%,
+    #c89770 67%,
+    #ffe7d1 100%
+  );
+}
+.col-12 {
+  padding: 0;
+}
+.container {
+  padding: 0;
+}
+.top-image {
+  right: 5%;
+  top: 1.5rem;
+}
+.top-image > img {
+  width: 45%;
+}
+
+.wedding-view {
+  max-width: 120rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.b-letter {
+  right: 10%;
+  top: 9%;
+}
+
+.a-letter {
+  left: 7%;
+  bottom: 18%;
+}
+
+.fixed-eye {
+  right: 3%;
+  bottom: 6%;
+  z-index: 100;
+}
+.eye-view-gif {
+  position: absolute;
+  top: auto;
+  bottom: auto;
+  right: auto;
+  left: auto;
+}
+
+/*  section two */
+.text-para {
+  font-size: 1.625rem;
+  color: 282828;
+  line-height: 1.875rem;
+}
+.love-text {
+  color: #fff;
+  position: relative;
+  top: -3rem;
+  left: 19%;
+  font-size: 8.5rem;
+  opacity: 70%;
+}
+.watch-black,
+.watch-black-exchange {
+  position: relative;
+  top: 0rem;
+  transition: top 1.5s ease;
+}
+.watch-black.animate,
+.watch-black-exchange.animate {
+  top: 4rem;
+}
+.watch-black.hover-up,
+.watch-black-exchange.hover-up {
+  top: 0rem;
+}
+
+.watch-black.hover-down,
+.watch-black-exchange.hover-down {
+  top: 4rem;
+}
+.watch-blue,
+.watch-blue-exchange {
+  left: 35%;
+  top: 4rem;
+  width: 100%;
+  transition: top 1.5s ease;
+}
+.watch-blue.animate,
+.watch-blue-exchange.animate {
+  top: 9rem;
+}
+
+.watch-blue.hover-up,
+.watch-blue-exchange.hover-up {
+  top: 4rem;
+}
+
+.watch-blue.hover-down,
+.watch-blue-exchange.hover-down {
+  top: 9rem;
+}
+.watch-view {
+  margin-left: auto;
+  margin-right: 0;
+  position: relative;
+  top: 5rem;
+}
+.bless-description {
+  position: relative;
+  top: -12rem;
+}
+.pulse-view > div:first-of-type > img {
+  width: 80%;
+  position: relative;
+  top: -4rem;
+}
+
+.pulse-wedding-image {
+  right: 0%;
+  top: 70%;
+}
+
+/* three section */
+.happiest-black-watch {
+  transform: rotate(-30deg);
+  right: -55%;
+  transition: right 1s ease;
+}
+.happiest-blue-watch {
+  transform: rotate(-30deg);
+  position: relative;
+  right: -82%;
+  transition: right 1s ease;
+}
+.happiest-black-watch-animate,
+.happiest-blue-watch-animate {
+  right: -35%;
+}
+.w-60 {
+  width: 60%;
+}
+.wedding-right-image {
+  position: relative;
+  top: 12rem;
+}
+.k-letter {
+  position: absolute;
+  bottom: 5%;
+  right: 8%;
+}
+.second-k-letter {
+  position: relative;
+  top: 28%;
+}
+
+.o-letter {
+  position: absolute;
+  bottom: 0%;
+  left: 16%;
+}
+
+.woman-man-icon {
+  position: absolute;
+  top: 55%;
+  right: 0rem;
+}
+.couple-image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  display: none;
+}
+
+/* section four */
+.bless-text {
+  color: #f9f9f9;
+  opacity: 20%;
+  top: 8rem;
+  right: 10%;
+}
+.orange-watch {
+  top: 0;
+  left: 30%;
+  width: 100%;
+  transition: left 1s ease;
+}
+
+.orange-watch.animate {
+  left: 100%;
+}
+.orange-watch.hover-up {
+  left: 30%;
+}
+
+.orange-watch.hover-down {
+  left: 100%;
+}
+.bless-wedding {
+  position: relative;
+  top: 15rem;
+}
+.bless-wedding > img {
+  width: 85%;
+}
+.bless-top-wedding {
+  position: absolute;
+  bottom: -50%;
+  right: 0;
+}
+.u-icon {
+  position: absolute;
+  right: 4%;
+  bottom: 2%;
+}
+.woman-man-icon-2 {
+  position: absolute;
+  right: 7%;
+  top: 45%;
+}
+/*five section */
+.exchange-section {
+  margin-top: 20rem;
+}
+
+.exchange-watch {
+  position: relative;
+  top: -6rem;
+}
+.exchange-wedding {
+  position: absolute;
+  top: -25rem;
+  right: 0;
+}
+.exchange-couple {
+  position: absolute;
+  top: -40rem;
+  left: 0;
+}
+.r-icon {
+  position: absolute;
+  bottom: -15rem;
+  left: -7%;
+}
+.exchange-text {
+  width: 78%;
+}
+.watch-black-exchange {
+  position: relative;
+  top: 0rem;
+  transition: top 1.5s ease;
+}
+.watch-black-exchange.animate {
+  top: 4rem;
+}
+.watch-black-exchange.hover-up {
+  top: 0rem;
+}
+
+.watch-black-exchange.hover-down {
+  top: 4rem;
+}
+.watch-blue-exchange {
+  left: 35%;
+  width: 100%;
+  transition: top 1.5s ease;
+}
+.watch-blue-exchange.animate {
+  top: 34.5%;
+}
+
+.watch-blue-exchange.hover-up {
+  top: 4rem;
+}
+
+.watch-blue-exchange.hover-down {
+  top: 34.5%;
+}
+.moment-text {
+  position: absolute;
+  color: #90b9c6;
+  top: 12rem;
+  right: 1%;
+}
+
+/* six section*/
+.paired-section {
+  margin-top: 13.5rem;
+}
+.linear-gradient-text {
+  background-image: linear-gradient(
+    175deg,
+    #ffe7d1 0%,
+    #c89770 33%,
+    #f4cfad 67%,
+    #905e3f 100%
+  );
+  background-clip: text;
+  color: transparent;
+  width: 87%;
+}
+
+.bless-blue-text {
+  color: #52808e;
+  font-size: 6.25rem;
+  position: relative;
+  top: -2rem;
+}
+.bless-content {
+  padding-top: 6rem;
+}
+.day-text {
+  font-family: "Mongolian Baiti", serif;
+}
+.year-text {
+  font-family: "Mongolian Baiti", serif;
+}
+.animate-watch {
+  position: absolute;
+  top: -27rem;
+  right: 0%;
+}
+.a-letter-two {
+  position: absolute;
+  right: 0%;
+  bottom: -9rem;
+}
+
+/*seven section */
+.bless-love-content {
+  padding-top: 5rem;
+}
+.bless-love-text {
+  color: #33525d;
+}
+.b-two-letter {
+  bottom: -8rem;
+  left: -7%;
+}
+.couple-bless {
+  position: absolute;
+  left: 0;
+  top: -10rem;
+}
+.couple-bless > img {
+  width: 80%;
+}
+.couple-bless-2 {
+  position: absolute;
+  right: 0;
+  top: 5rem;
+}
+/*eight section*/
+.insted-text {
+  font-size: 6.25rem;
+  color: #4f4f4f;
+}
+
+/*nine section*/
+
+.request-section {
+  padding-top: 13.5rem;
+}
+.your-text {
+  color: #696666;
+  font-size: 6.25rem;
+  position: absolute;
+  top: 30%;
+  z-index: 3;
+}
+.watches-view-section {
+  position: relative;
+  top: -2.5rem;
+}
+.request-img {
+  position: relative;
+  transform: rotate(-20.5deg);
+  transition: transform 1s ease;
+}
+
+.love-image {
+  position: absolute;
+  top: -16%;
+  left: -22%;
+}
+.love-wedding {
+  position: absolute;
+  top: -6rem;
+  right: 0;
+}
+.love-wedding-image {
+  position: absolute;
+  top: 0%;
+  left: 0;
+}
+.watch {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  opacity: 100;
+}
+
+.watch {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+
+.watch.show {
+  opacity: 1;
+}
+
+/*TEN SECTION*/
+.k-two-letter {
+  top: 80%;
+  left: 10%;
+}
+
+/*eleven section */
+
+.country-watch-section {
+  padding-top: 9.25rem;
+}
+.country-name {
+  color: #7099a6;
+  font-size: 6.25rem;
+  line-height: 2rem;
+  position: absolute;
+  right: 0;
+  bottom: 0rem;
+}
+.country-left {
+  top: 0;
+  left: 0;
+}
+.country-right {
+  right: 0;
+  bottom: -120%;
+}
+
+.orange-right-watch {
+  top: 0.5%;
+  left: 12%;
+  width: 100%;
+  transition: left 1s ease;
+}
+
+.orange-right-watch.animate {
+  left: 62%;
+}
+
+.orange-right-watch.hover-up {
+  left: 12%;
+}
+
+.orange-right-watch.hover-down {
+  left: 62%;
+}
+
+.o-letter-two {
+  position: absolute;
+  bottom: -22%;
+  right: 7%;
+}
+.country-center {
+  left: 10%;
+  top: 57%;
+}
+.country-center > img {
+  width: 90%;
+}
+.watch-two-image {
+  position: relative;
+  left: -2rem;
+}
+.country-two-left {
+  position: absolute;
+  left: 0;
+  top: -30%;
+}
+.country-two-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+/* slide section*/
+.container-slide {
+  max-width: 150rem;
+  margin: 0 auto;
+  padding-left: 10%;
+}
+.slide-section {
+  padding-top: 15rem;
+}
+.slide-text {
+  color: #528c9f;
+  font-size: 6.25rem;
+  left: -1rem;
+  bottom: 0;
+}
+.text-silde {
+  font-size: 1.25rem;
+}
+.splide__list {
+  display: flex;
+}
+
+.splide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.splide__track {
+  overflow: hidden;
+  width: 100%;
+}
+
+.splide__slide {
+  width: 42%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+.splide__slide > img {
+  width: 100%;
+  height: 100%;
+}
+.splide__arrow {
+  display: none;
+}
+/* footer  */
+.footer {
+  padding-top: 23rem;
+}
+.contact-text {
+  color: #548b9b;
+  position: absolute;
+  top: 0;
+  left: -4rem;
+  font-size: 7.5rem;
+}
+.visit-text {
+  font-size: 2.5rem;
+  line-height: 3.125rem;
+}
+
+.website-text > a {
+  color: #cfbb94;
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+
+.input-row {
+  background: linear-gradient(to bottom, #41637d 0%, #9fc5d1 100%) !important;
+  border-radius: 2.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+  border: 1px solid #dfc188;
+}
+.input-row:focus {
+  background: linear-gradient(to bottom, #41637d 0%, #9fc5d1 100%);
+  border-radius: 2.5rem;
+  padding: 0.8rem 1.5rem;
+  font-size: 1.25rem;
+  color: #ffffff;
+  box-shadow: none;
+}
+.input-row::placeholder {
+  font-size: 1.25rem;
+  color: #ffffff;
+}
+.input-border {
+  background: linear-gradient(to bottom, #dfc188 0%, #79694a 100%);
+  border-radius: 2.5rem;
+  padding: 1px;
+}
+.contact-form {
+  padding-top: 5.25rem;
+  padding-bottom: 11.563rem;
+}
+.text-check {
+  font-size: 1.125rem;
+  line-height: 1.375rem;
+  color: #d1d1d1;
+}
+.text-check > a {
+  color: #dfc188;
+}
+.check-input {
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url("../images/check-before.svg");
+  background-size: cover;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.check-input:checked {
+  background-color: transparent;
+  background-image: url("../images/check-after.svg");
+  background-size: cover;
+  border: none;
+  box-shadow: none;
+}
+
+.check-input:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.form-check > label {
+  position: relative;
+  width: 100%;
+  top: -2.5rem;
+  left: 3.5rem;
+}
+.line {
+  height: 1px;
+  width: 100%;
+  background-color: #7c92a3;
+}
+.cookies-text {
+  font-size: 1rem;
+  color: #a7b5bf;
+}
+.image-marry {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+.a-letter-footer {
+  top: 3rem;
+}
+.feed-2 {
+  position: relative;
+  top: -2.5rem;
+}
+.cookies-row {
+  column-gap: 1rem;
+  row-gap: 2rem;
+}
+.cookies {
+  display: flex;
+}
+@media (max-width: 1400px) {
+  .hero-text {
+    width: 90%;
+  }
+  .bakkoura-text {
+    font-size: 6.5rem;
+  }
+  .bakkoura-b-image {
+    width: 70%;
+  }
+  .a-letter {
+    bottom: 5%;
+  }
+  .wedding-right-image {
+    width: 80%;
+  }
+  .bless-top-wedding {
+    width: 40%;
+  }
+
+  .r-icon {
+    left: 0%;
+  }
+  .exchange-couple {
+    top: -30rem;
+  }
+  .animate-watch {
+    top: -20rem;
+  }
+  .animate-watch > img {
+    width: 60%;
+  }
+  .a-letter-two {
+    bottom: -5rem;
+  }
+  .couple-bless > img {
+    width: 70%;
+  }
+  .b-two-letter {
+    left: 0%;
+  }
+  .love-image > img {
+    width: 90%;
+  }
+  .love-image {
+    top: -14%;
+    left: -5%;
+  }
+  .love-text-content {
+    padding-left: 6%;
+  }
+  .paired-section {
+    margin-top: 10rem;
+  }
+  .k-two-letter {
+    width: 30%;
+    left: 3%;
+  }
+  .bless-love-content {
+    padding-top: 0rem;
+  }
+  .country-left > img {
+    width: 70%;
+  }
+  .country-right {
+    bottom: -105%;
+  }
+  .country-right > img {
+    width: 80%;
+  }
+  .country-two-right > img {
+    width: 80%;
+  }
+  .country-two-right {
+    top: 13rem;
+  }
+  .o-letter-two {
+    bottom: -10%;
+    right: -4%;
+  }
+  .o-letter-two > img {
+    width: 70%;
+  }
+  .orange-right-watch.animate {
+    left: 50%;
+  }
+
+  .orange-right-watch.hover-down {
+    left: 50%;
+  }
+}
+@media (max-width: 1200px) {
+  .hero-text {
+    width: 95%;
+  }
+  .bakkoura-text {
+    font-size: 5.5rem;
+  }
+  .bakkoura-b-image {
+    width: 50%;
+  }
+  .hero-text {
+    font-size: 4.625rem;
+    line-height: 4rem;
+  }
+  .b-letter {
+    right: 0%;
+  }
+
+  /*section 3 */
+  .k-letter {
+    width: 45%;
+  }
+  .pulse-wedding-image {
+    top: 65%;
+  }
+  .o-letter > img {
+    width: 70%;
+  }
+  .woman-man-icon {
+    left: 55%;
+  }
+  .orange-watch {
+    width: 85%;
+  }
+  .black-man-watch {
+    width: 85%;
+  }
+  .orange-watch.animate {
+    left: 85%;
+  }
+  .orange-watch.hover-down {
+    left: 85%;
+  }
+  .exchange-couple > img {
+    width: 60%;
+  }
+  .animate-watch > img {
+    width: 50%;
+  }
+  .exchange-wedding {
+    top: -10rem;
+  }
+  .exchange-wedding > img {
+    width: 60%;
+  }
+  .watch-black-exchange {
+    width: 80%;
+  }
+  .watch-black-exchange > img {
+    width: 80%;
+  }
+  .watch-blue-exchange {
+    width: 80%;
+  }
+  .watch-blue-exchange > img {
+    width: 80%;
+  }
+  .bless-content {
+    padding-top: 0rem;
+  }
+  .r-icon > img {
+    width: 80%;
+  }
+  .a-letter-two > img {
+    width: 80%;
+  }
+  .a-letter-two {
+    bottom: -9rem;
+  }
+  .love-image > img {
+    width: 100%;
+  }
+  .love-text-content {
+    padding-left: 8%;
+  }
+  .r-icon {
+    bottom: -13rem;
+  }
+  .paired-section-2 {
+    margin-top: 8rem;
+  }
+  .k-two-letter {
+    width: 25%;
+  }
+
+  .orange-right-watch.animate {
+    left: 30%;
+  }
+
+  .orange-right-watch.hover-down {
+    left: 30%;
+  }
+  .country-two-left > img {
+    width: 80%;
+  }
+  .country-two-right > img {
+    width: 80%;
+  }
+  .o-letter-two {
+    bottom: -20%;
+    right: 0%;
+  }
+  .country-center {
+    top: 91%;
+  }
+  .black-left-watch {
+    width: 90%;
+  }
+  .orange-right-watch {
+    width: 90%;
+  }
+  .watch-two-image {
+    left: -1rem;
+  }
+  .o-letter-two > img {
+    width: 60%;
+  }
+  .footer {
+    padding-top: 12rem;
+  }
+  .slide-section {
+    padding-top: 10rem;
+  }
+  .footer-right-img > img {
+    width: 50%;
+  }
+  .footer-left-img > img {
+    width: 50%;
+  }
+}
+@media (max-width: 992px) {
+  .bakkoura-text {
+    font-size: 4rem;
+  }
+  .bakkoura-b-image {
+    width: 50%;
+  }
+  .hero-text {
+    font-size: 3.625rem;
+    line-height: 3rem;
+  }
+  .b-letter {
+    right: 0%;
+  }
+  .flower-view {
+    position: relative;
+    top: 7rem;
+  }
+  .a-letter {
+    bottom: -8%;
+    left: 2%;
+  }
+  .top-image > img {
+    width: 60%;
+  }
+  .watch-black {
+    width: 80%;
+  }
+  .watch-black > img {
+    width: 80%;
+  }
+  .watch-blue {
+    width: 80%;
+  }
+  .watch-blue > img {
+    width: 80%;
+  }
+  .pulse-wedding-image {
+    width: 65%;
+  }
+  .o-letter {
+    left: 7%;
+  }
+  .o-letter > img {
+    width: 50%;
+  }
+  .happiest-view {
+    width: 70%;
+  }
+  .woman-man-icon {
+    left: 40%;
+  }
+  .black-man-watch {
+    width: 75%;
+  }
+  .orange-watch {
+    width: 75%;
+  }
+  .orange-watch.animate {
+    left: 60%;
+  }
+  .orange-watch.hover-down {
+    left: 60%;
+  }
+  .wedding-right-image {
+    width: 70%;
+    top: 27rem;
+  }
+  .bless-top-wedding {
+    bottom: -42%;
+  }
+  .bless-wedding {
+    top: 30rem;
+  }
+  .u-icon {
+    right: 0%;
+  }
+  .u-icon > img {
+    width: 60%;
+  }
+  .r-icon > img {
+    width: 65%;
+  }
+  .a-letter-two > img {
+    width: 65%;
+  }
+  .a-letter-two {
+    bottom: -8rem;
+    right: 0%;
+  }
+  .bless-love-content {
+    padding-top: 2.5rem;
+  }
+  .s-icon > img {
+    width: 6.5rem;
+  }
+  .paired-section-2 {
+    margin-top: 5rem;
+  }
+  .b-two-letter {
+    bottom: -4rem;
+  }
+  .country-watch-section {
+    padding-top: 2rem;
+  }
+  .black-left-watch {
+    width: 75%;
+  }
+  .orange-right-watch {
+    width: 75%;
+  }
+  .country-right > img {
+    width: 60%;
+  }
+  .country-left > img {
+    width: 55%;
+  }
+  .country-two-left > img {
+    width: 60%;
+  }
+  .country-two-left {
+    top: -19%;
+  }
+  .country-two-right > img {
+    width: 60%;
+  }
+  .o-letter-two > img {
+    width: 50%;
+  }
+  .o-letter-two {
+    bottom: -8%;
+    right: 0%;
+  }
+}
+@media (max-width: 768px) {
+  .hero-text {
+    font-size: 2.625rem;
+    width: 100%;
+    line-height: 2.5rem;
+  }
+  .bakkoura-text {
+    font-size: 3rem;
+  }
+  .bakkoura-b-image {
+    width: 40%;
+  }
+  .b-letter {
+    top: 15%;
+  }
+  .a-letter {
+    bottom: -18%;
+    left: 10%;
+  }
+
+  /*section 3*/
+  .wedding-right-image {
+    width: 60%;
+    top: 20rem;
+  }
+
+  .o-letter > img {
+    top: 45%;
+  }
+  .woman-man-icon {
+    top: 99%;
+  }
+  .woman-man-icon > img {
+    width: 25%;
+  }
+  .watch-view {
+    top: 2rem;
+  }
+  .love-icons {
+    width: 35%;
+  }
+  .bless-description {
+    top: -7rem;
+  }
+
+  .bless-top-wedding {
+    right: -10%;
+  }
+  .black-man-watch {
+    width: 70%;
+  }
+  .orange-watch {
+    width: 70%;
+  }
+  .orange-watch.animate {
+    left: 42%;
+  }
+  .orange-watch.hover-down {
+    left: 42%;
+  }
+  .exchange-couple {
+    top: -30rem;
+  }
+  .animate-watch {
+    top: -21rem;
+  }
+  .r-icon {
+    bottom: -12rem;
+  }
+  .r-icon > img {
+    width: 55%;
+  }
+  .a-letter-two > img {
+    width: 55%;
+  }
+  .k-two-letter {
+    width: 38%;
+  }
+  .footer {
+    padding-top: 7rem;
+  }
+  .contact-form {
+    padding-top: 2rem;
+    padding-bottom: 7rem;
+  }
+  .a-letter-footer {
+    top: -4rem;
+  }
+}
+@media (max-width: 576px) {
+  .bakkoura-text {
+    font-size: 2rem;
+  }
+  .col-12 {
+    width: 100% !important;
+  }
+  .hero-section {
+    padding-bottom: 7rem;
+  }
+  .bakkoura-b-image {
+    width: 45%;
+  }
+  .b-letter {
+    top: 30%;
+    right: -10%;
+  }
+  .top-image {
+    width: 100%;
+    right: auto;
+    left: -20%;
+  }
+  .top-image > img {
+    width: 80%;
+  }
+  .flower-view {
+    top: 10rem;
+    left: -12%;
+    transform: rotate(5deg);
+  }
+  .flower-view > img {
+    width: 80%;
+  }
+  .hero-section {
+    box-sizing: border-box;
+  }
+  .flower-view-2 {
+    position: relative;
+    top: 6rem;
+    right: 0%;
+  }
+  .a-letter {
+    bottom: -8rem;
+    left: 3%;
+  }
+  /*sectiooo3 */
+  .watch-view {
+    margin-left: 0;
+    margin-right: 0;
+    top: 0rem;
+    padding-bottom: 3rem;
+  }
+  .o-letter > img {
+    width: 40%;
+  }
+  .bless-description {
+    top: 0rem;
+  }
+  .love-icons {
+    width: 6.125rem;
+  }
+  .watch-black {
+    width: 100%;
+  }
+  .watch-black > img {
+    width: 100%;
+  }
+  .watch-blue {
+    width: 100%;
+  }
+  .watch-blue > img {
+    width: 100%;
+  }
+  .watch-blue,
+  .watch-blue-exchange {
+    left: 48%;
+  }
+  .pulse-view > div:first-of-type > img {
+    width: 140%;
+    max-width: 180% !important;
+    left: -30%;
+    top: -6rem;
+  }
+  .k-letter {
+    position: relative;
+    bottom: 0%;
+    right: 0%;
+    width: 55%;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 3rem 0rem;
+  }
+
+  .pulse-wedding-image {
+    top: 50%;
+    right: -10%;
+  }
+  .pulse-wedding-image > img {
+    width: 110%;
+    max-width: 120% !important;
+  }
+  .love-text {
+    font-size: 3rem;
+    top: 0.5rem;
+    left: 1%;
+  }
+  .love-text-mob {
+    position: absolute;
+    top: 4rem;
+  }
+  .happiest-view {
+    width: 100%;
+  }
+  .happiest-black-watch {
+    transform: rotate(0deg);
+  }
+  .happiest-blue-watch {
+    transform: rotate(0deg);
+  }
+  .wedding-right-image {
+    top: 35rem;
+  }
+  .o-letter {
+    position: relative;
+  }
+  .woman-man-icon {
+    display: none;
+  }
+  .happiest-black-watch-animate,
+  .happiest-blue-watch-animate {
+    right: 0%;
+  }
+  .happiest-view {
+    padding: 2rem 0rem;
+  }
+  .bless-text {
+    font-size: 3rem;
+  }
+  .woman-man-icon-2 {
+    display: none;
+  }
+  .bless-top-wedding {
+    display: none;
+  }
+  .bless-wedding {
+    right: -30%;
+  }
+  .bless-wedding > img {
+    width: 140%;
+    max-width: 140% !important;
+  }
+  .black-man-watch {
+    width: 60%;
+  }
+  .orange-watch {
+    width: 60%;
+  }
+  .orange-watch.animate {
+    left: 30%;
+  }
+  .orange-watch.hover-down {
+    left: 30%;
+  }
+  .u-icon > img {
+    width: 50%;
+  }
+  .u-icon {
+    bottom: -7%;
+  }
+
+  .exchange-section {
+    margin-top: 5rem;
+  }
+  .exchange-watch {
+    top: 0rem;
+    margin-top: 2rem;
+  }
+  .watch-black-exchange {
+    width: 100%;
+  }
+  .watch-black-exchange > img {
+    width: 100%;
+  }
+  .watch-blue-exchange {
+    width: 100%;
+  }
+  .watch-blue-exchange > img {
+    width: 100%;
+  }
+  .exchange-wedding > img {
+    width: 80%;
+  }
+  .r-icon {
+    right: 0;
+    top: 22rem;
+  }
+  .r-icon > img {
+    width: 40%;
+  }
+  .exchange-wedding {
+    bottom: -20%;
+  }
+  .exchange-couple {
+    display: none;
+  }
+  .bless-blue-text {
+    margin-bottom: 0;
+  }
+  .bless-blue-text {
+    font-size: 3rem;
+    margin: 0rem 2rem;
+  }
+
+  .a-letter-two {
+    top: -8rem;
+    left: 0;
+  }
+  .a-letter-two > img {
+    width: 9rem;
+    max-width: 45%;
+  }
+
+  .paired-section {
+    margin-top: 4rem;
+  }
+  .bless-love-content {
+    padding-top: 0rem;
+  }
+  .a-letter-three {
+    position: absolute;
+  }
+  .couple-bless-2 {
+    top: -12rem;
+  }
+  .couple-bless {
+    top: -2rem;
+  }
+  .a-letter-three > img {
+    position: absolute;
+    right: 0;
+    bottom: 54px;
+  }
+  .b-two-letter {
+    left: 4%;
+  }
+  .request-section {
+    padding-top: 7rem;
+  }
+  .watches-view-section {
+    transform: rotate(-21.5deg);
+    margin: 0 auto;
+  }
+  .love-wedding > img {
+    width: 100%;
+    position: relative;
+    top: -4rem;
+  }
+
+  .love-wedding-image {
+    bottom: -38%;
+    top: auto;
+  }
+  .love-wedding-image > img {
+    width: 50%;
+  }
+  .love-text-content {
+    padding-top: 4rem;
+    padding-left: 2%;
+    padding-right: 4%;
+  }
+  .love-image {
+    display: flex;
+    justify-content: start;
+    top: -5%;
+  }
+  .love-image > img {
+    width: 80%;
+  }
+  .k-two-letter {
+    width: 37%;
+    margin-left: 0;
+  }
+  .country-left > img {
+    width: 100%;
+  }
+  .country-left {
+    top: 9rem;
+  }
+  .country-center > img {
+    width: 100%;
+  }
+  .country-center {
+    top: 131%;
+  }
+  .country-right > img {
+    width: 90%;
+  }
+  .country-two-left > img {
+    width: 90%;
+  }
+  .container-slide {
+    padding-left: 4%;
+  }
+}
+@media (max-width: 414px) {
+  .flower-view {
+    top: 10rem;
+    left: -12%;
+    transform: rotate(5deg);
+  }
+  .flower-view > img {
+    width: 100%;
+  }
+  .a-letter {
+    bottom: -16rem;
+  }
+  .pulse-wedding-image {
+    top: 40%;
+    right: -10%;
+  }
+  .pulse-view > div:first-of-type > img {
+    top: -4rem;
+  }
+  .love-text-mob {
+    top: 6rem;
+  }
+  .love-image {
+    top: 1%;
+  }
+}

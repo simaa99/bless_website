@@ -540,8 +540,10 @@ document.addEventListener("DOMContentLoaded", function () {
 (function () {
   emailjs.init("81lJIefcLX2aq_psX"); // Replace with your EmailJS user ID
 })();
+
 document.addEventListener("DOMContentLoaded", function () {
   var form = document.getElementById("contact-form");
+  var successMessage = document.querySelector(".sucess-message");
 
   form.addEventListener(
     "submit",
@@ -554,6 +556,12 @@ document.addEventListener("DOMContentLoaded", function () {
         emailjs.sendForm("service_r2ugbk4", "template_7tlcc7b", form).then(
           function (response) {
             console.log("SUCCESS!", response.status, response.text);
+            form.reset(); // Reset the form
+            form.classList.remove("was-validated"); // Remove validation classes
+            successMessage.style.display = "block"; // Show success message
+            setTimeout(function () {
+              successMessage.style.display = "none"; // Hide success message after 5 seconds
+            }, 5000);
           },
           function (error) {
             console.log("FAILED...", error);

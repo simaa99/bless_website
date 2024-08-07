@@ -574,6 +574,7 @@ document.addEventListener("DOMContentLoaded", function () {
     false
   );
 });
+
 document.querySelector(".button-ok").addEventListener("click", function () {
   document.querySelector(".cookies").style.display = "none";
 });

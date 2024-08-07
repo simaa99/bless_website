@@ -44,7 +44,10 @@
       media="print"
       onload="this.media='all'"
     />
-
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.2.2/dist/js/splide.min.js"></script>
     <noscript><link rel="stylesheet" href="css/style.css" /></noscript>
   </head>
@@ -1734,7 +1737,8 @@
                         <input
                           type="text"
                           class="form-control input-row"
-                          id="validationCustom01"
+                          id="name"
+                          name="name"
                           placeholder="Name"
                           required
                         />
@@ -1747,8 +1751,9 @@
                         <input
                           type="text"
                           class="form-control input-row"
-                          id="validationCustom02"
-                          placeholder="Telephone number "
+                          id="telephone"
+                          name="telephone"
+                          placeholder="Telephone number"
                           required
                         />
                         <div class="invalid-feedback">
@@ -1760,7 +1765,8 @@
                         <input
                           type="email"
                           class="form-control input-row"
-                          id="validationCustom03"
+                          id="email"
+                          name="email"
                           required
                           placeholder="Email address"
                         />
@@ -1774,7 +1780,8 @@
                         <textarea
                           type="text"
                           class="form-control input-row w-100 h-100"
-                          id="validationCustom04"
+                          id="message"
+                          name="message"
                           placeholder="Your Text here"
                           required
                           style="min-height: 10rem"
@@ -1793,6 +1800,7 @@
                         class="check-input"
                         type="checkbox"
                         id="invalidCheck"
+                        name="agreement"
                         required
                       />
                       <label for="invalidCheck" class="text-check">
@@ -1895,8 +1903,6 @@
         </div>
       </footer>
     </div>
-
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
 
     <script src="js/script.js" defer></script>
   </body>

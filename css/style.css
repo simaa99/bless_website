@@ -357,7 +357,7 @@ header {
 }
 .exchange-wedding {
   position: absolute;
-  top: -25rem;
+  top: -20rem;
   right: 0;
 }
 .exchange-couple {
@@ -780,6 +780,12 @@ header {
 }
 .cookies {
   display: flex;
+}
+.sucess-message {
+  color: rgb(5, 70, 5);
+  font-size: 1rem;
+  text-transform: capitalize;
+  display: none;
 }
 @media (max-width: 1400px) {
   .hero-text {
@@ -1234,6 +1240,9 @@ header {
   .a-letter-footer {
     top: -4rem;
   }
+  .love-text {
+    color: #eae9e9;
+  }
 }
 @media (max-width: 576px) {
   .bakkoura-text {
@@ -1380,11 +1389,13 @@ header {
     display: none;
   }
   .bless-wedding {
-    right: -30%;
+    right: 0%;
+    bottom: auto;
+    top: 19vh;
   }
   .bless-wedding > img {
-    width: 140%;
-    max-width: 140% !important;
+    width: 100%;
+    max-width: 100% !important;
   }
   .black-man-watch {
     width: 60%;
@@ -1429,7 +1440,8 @@ header {
   }
   .r-icon {
     right: 0;
-    top: 22rem;
+    top: 40vh;
+    height: auto;
   }
   .r-icon > img {
     width: 40%;
@@ -1461,13 +1473,15 @@ header {
     margin-top: 4rem;
   }
   .bless-love-content {
-    padding-top: 0rem;
+    padding-top: 2rem;
+    z-index: 2;
   }
   .a-letter-three {
     position: absolute;
   }
   .couple-bless-2 {
-    top: -12rem;
+    top: -20rem;
+    width: 100%;
   }
   .couple-bless {
     top: -2rem;
@@ -1530,15 +1544,150 @@ header {
     top: 131%;
   }
   .country-right > img {
-    width: 90%;
+    width: 100%;
   }
+
   .country-two-left > img {
     width: 90%;
   }
   .container-slide {
     padding-left: 4%;
   }
+  .fixed-eye > div > img {
+    width: 7rem;
+  }
+  .eye-view-gif > video {
+    width: 4rem;
+    height: 4rem;
+  }
+  .wedding-left-2-image {
+    position: relative;
+    top: 0rem;
+  }
+  .wedding-left-2-image > img {
+    width: 45%;
+  }
+  .u-icon {
+    z-index: 2 !important;
+  }
+  .bless-mob-1 {
+    position: absolute;
+    left: 0;
+    bottom: -1vh;
+  }
+  .bless-mob-1 > img {
+    width: 80%;
+  }
+  .bless-mob-2 {
+    position: absolute;
+    right: 0;
+    bottom: -30vh;
+  }
+  .bless-mob-2 > img {
+    width: 90%;
+  }
+  .young-imgg {
+    position: absolute;
+    top: 14%;
+    right: 0;
+    width: 100%;
+  }
+  .young-imgg > img {
+    width: 70%;
+  }
+  .moment-text {
+    position: absolute;
+    color: #6096a6;
+    top: 12rem;
+    right: auto;
+    left: 1%;
+  }
+  .paired-3 {
+    margin-top: 20rem;
+  }
+  .web-wedding-mobile {
+    position: absolute;
+    left: 0;
+    top: -13rem;
+    width: 100%;
+  }
+  .insted-text {
+    color: white;
+  }
+  .your-text {
+    color: white;
+    font-size: 3.125rem;
+    top: 39%;
+  }
+  .country-left-mob {
+    position: absolute;
+    top: -14rem;
+  }
+  .country3-section {
+    margin-top: 12rem;
+  }
+  .k-two-letter {
+    width: 53%;
+    margin-left: 0;
+    top: 119%;
+  }
+  .salvic-section {
+    padding-top: 9.188rem;
+  }
+  .country-watch-section {
+    padding-top: 0rem;
+  }
+  .black-left-watch {
+    width: 58%;
+  }
+  .orange-right-watch {
+    width: 58%;
+  }
+  .country-mobb {
+    position: absolute;
+    bottom: -55%;
+  }
+  .country-right {
+    bottom: -124%;
+  }
+  .country-right {
+    width: 70%;
+  }
+  .country-two-left {
+    top: -36%;
+    width: 100%;
+  }
+  .country-two-left > img {
+    width: 100%;
+  }
+  .salvic-img {
+    position: absolute;
+    top: -27%;
+    z-index: 0;
+  }
+  .z-index {
+    z-index: 2 !important;
+  }
+  .z-in {
+    z-index: 3 !important;
+  }
+  .salvic-img2 > img {
+    width: 70%;
+  }
+  .salvic-img2 {
+    position: absolute;
+    bottom: -31%;
+    right: 0;
+    width: 100%;
+  }
+  .footer {
+    padding-top: 8rem;
+  }
+  .a-letter-footer {
+    top: 0rem;
+  }
 }
+
 @media (max-width: 414px) {
   .flower-view {
     top: 10rem;
@@ -1559,9 +1708,33 @@ header {
     top: -4rem;
   }
   .love-text-mob {
-    top: 6rem;
+    top: auto;
+    bottom: 30%;
   }
   .love-image {
     top: 1%;
+  }
+  .wedding-left-2-image {
+    position: relative;
+    top: 21vh;
+  }
+  .young-imgg {
+    top: 25%;
+  }
+  .country-mobb {
+    position: absolute;
+    bottom: -35%;
+  }
+  .country-right {
+    width: 100%;
+  }
+  .country-right {
+    bottom: -134%;
+  }
+  .country-two-left {
+    top: -26%;
+  }
+  .salvic-img2 > img {
+    width: 100%;
   }
 }

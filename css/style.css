@@ -93,6 +93,67 @@ header {
   margin: 0 auto;
 }
 
+.dropbtn {
+  background-color: transparent;
+  color: black;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: transparent;
+}
+
+.dropdown {
+  position: absolute;
+  right: 3%;
+  top: 3rem;
+  z-index: 3;
+}
+.dropdown-menu {
+  min-width: 100% !important;
+  padding: 0 !important;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0);
+  min-width: 80px;
+  padding: 0;
+  box-shadow: 18px 18px 45px 19px rgba(79, 94, 120, 0.1);
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 5px 16px;
+  text-decoration: none;
+  display: block;
+}
+.custom-dropdown {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.custom-dropdown .dropdown-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+  color: #000;
+}
+
+.custom-dropdown::after {
+  display: none;
+}
+
 .bakkoura-text {
   color: #000000;
   font-family: "Callient", serif;

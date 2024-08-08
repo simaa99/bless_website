@@ -1403,11 +1403,17 @@ header {
   .orange-watch {
     width: 60%;
   }
+  .orange-watch {
+    left: 25%;
+  }
   .orange-watch.animate {
-    left: 30%;
+    left: 40%;
+  }
+  .orange-watch.hover-up {
+    left: 25%;
   }
   .orange-watch.hover-down {
-    left: 30%;
+    left: 40%;
   }
   .u-icon > img {
     width: 50%;

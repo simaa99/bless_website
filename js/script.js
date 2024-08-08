@@ -497,7 +497,7 @@ document.addEventListener("DOMContentLoaded", function () {
         perPage: 1,
       },
       647: {
-        perPage: 2.2,
+        perPage: 1.2,
       },
       478: {
         perPage: 1.2,
@@ -574,7 +574,6 @@ document.addEventListener("DOMContentLoaded", function () {
     false
   );
 });
-
 document.querySelector(".button-ok").addEventListener("click", function () {
   document.querySelector(".cookies").style.display = "none";
 });

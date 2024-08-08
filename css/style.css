@@ -1441,7 +1441,7 @@ header {
   .r-icon {
     right: 0;
     top: 40vh;
-    height: auto;
+    height: 5rem;
   }
   .r-icon > img {
     width: 40%;
@@ -1685,6 +1685,47 @@ header {
   }
   .a-letter-footer {
     top: 0rem;
+  }
+  .mob-flex {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .mob-flex-rev {
+    flex-direction: column-reverse !important;
+  }
+  .watch-two-image {
+    width: 100%;
+  }
+  .text-mob-start {
+    text-align: left !important;
+  }
+  .ptt-5 {
+    padding-top: 48px !important;
+  }
+  .justify-content-end-end {
+    justify-content: end !important;
+  }
+  .d-2-flex {
+    display: flex !important;
+  }
+  .d-2-block {
+    display: block !important;
+  }
+  .d-2-none {
+    display: none !important;
+  }
+
+  .watch-black.animate,
+  .watch-black-exchange.animate {
+    top: 2.5rem;
+  }
+
+  .watch-black.hover-down,
+  .watch-black-exchange.hover-down {
+    top: 2.5rem;
+  }
+  .text-b-black {
+    color: #000000 !important;
   }
 }
 

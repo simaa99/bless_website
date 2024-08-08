@@ -423,7 +423,8 @@ header {
     #f4cfad 67%,
     #905e3f 100%
   );
-  background-clip: text;
+  -webkit-background-clip: text; /* For Safari and Chrome */
+  background-clip: text; /* Standard property */
   color: transparent;
   width: 87%;
 }

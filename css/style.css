@@ -1686,6 +1686,34 @@ header {
   .a-letter-footer {
     top: 0rem;
   }
+  .mob-flex {
+    display: flex;
+    flex-direction: column !important;
+  }
+  .mob-flex-rev {
+    flex-direction: column-reverse !important;
+  }
+  .watch-two-image {
+    width: 100%;
+  }
+  .text-mob-start {
+    text-align: left !important;
+  }
+  .ptt-5 {
+    padding-top: 48px !important;
+  }
+  .justify-content-end-end {
+    justify-content: end !important;
+  }
+  .d-2-flex {
+    display: flex !important;
+  }
+  .d-2-block {
+    display: block !important;
+  }
+  .d-2-none {
+    display: none !important;
+  }
 }
 
 @media (max-width: 414px) {

@@ -811,7 +811,7 @@ header {
 }
 .form-check > label {
   position: relative;
-  width: 100%;
+  width: 90%;
   top: -2.5rem;
   left: 3.5rem;
 }
@@ -848,6 +848,176 @@ header {
   font-size: 1rem;
   text-transform: capitalize;
   display: none;
+}
+.modal-dialog {
+  width: 90%;
+  max-width: 75rem !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal-dialog-2 {
+  width: 80%;
+  max-width: 62rem !important;
+  margin-right: auto;
+  margin-left: auto;
+}
+.modal-header {
+  border: none;
+}
+.text-area-height {
+  height: 7rem;
+}
+.modal-content {
+  border-radius: 0px;
+  padding-left: 10% !important;
+  padding-right: 10% !important;
+}
+.modal-footer {
+  border: none;
+}
+.form-label-row {
+  color: #a7b5bf;
+  font-size: 14px;
+  padding-left: 1rem;
+}
+.form-control-row {
+  background-color: #f3f3f3;
+  color: #000;
+  padding: 1rem;
+  border-radius: 40px;
+  border: 1px solid #f3f3f3;
+  box-shadow: none;
+  outline: none;
+  font-size: 1rem;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+}
+.form-select::placeholder {
+  color: #000;
+}
+.form-control-row::placeholder {
+  color: #000;
+}
+.form-control-row:focus {
+  border: 1px solid #dfc188;
+  background-color: #f3f3f3;
+  box-shadow: none;
+  outline: none;
+}
+.form-control-row:active {
+  border: 1px solid #dfc188;
+  background-color: #f3f3f3;
+  box-shadow: none;
+  outline: none;
+}
+.form-control.is-invalid,
+.was-validated .form-control:invalid {
+  background-image: none;
+}
+.form-select.is-invalid:not([multiple]):not([size]),
+.form-select.is-invalid:not([multiple])[size="1"],
+.was-validated .form-select:invalid:not([multiple]):not([size]),
+.was-validated .form-select:invalid:not([multiple])[size="1"] {
+  --bs-form-select-bg-icon: none;
+}
+.form-control.is-valid,
+.was-validated .form-control:valid {
+  background-image: none !important;
+}
+.form-select.is-valid:not([multiple]):not([size]),
+.form-select.is-valid:not([multiple])[size="1"],
+.was-validated .form-select:valid:not([multiple]):not([size]),
+.was-validated .form-select:valid:not([multiple])[size="1"] {
+  --bs-form-select-bg-icon: none;
+}
+.form-select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../images/Group\ 8128.svg"); /* Replace with your icon path */
+  background-repeat: no-repeat;
+  background-position: right 1.2rem center;
+  background-size: 0.6rem;
+  padding-right: 2rem; /* Adjust based on the size of the icon */
+}
+
+.form-select.is-invalid:not([multiple]):not([size]),
+.form-select.is-invalid:not([multiple])[size="1"],
+.was-validated .form-select:invalid:not([multiple]):not([size]),
+.was-validated .form-select:invalid:not([multiple])[size="1"] {
+  background-position: right 1.2rem center;
+  background-size: 0.6rem;
+  padding-right: 2rem;
+}
+.form-select.is-valid:not([multiple]):not([size]),
+.form-select.is-valid:not([multiple])[size="1"],
+.was-validated .form-select:valid:not([multiple]):not([size]),
+.was-validated .form-select:valid:not([multiple])[size="1"] {
+  background-position: right 1.2rem center;
+  background-size: 0.6rem;
+  padding-right: 2rem;
+}
+.text-check-2 {
+  font-size: 1rem;
+  color: #282828;
+  font-family: "Montserrat", serif;
+  font-weight: 300;
+}
+.text-check-2 > span {
+  font-size: 1rem;
+  color: #427381;
+}
+.check-input-2 {
+  width: 2.625rem;
+  height: 2.625rem;
+  border-radius: 50%;
+  background-color: transparent;
+  background-image: url("../images/check-2-before.svg");
+  background-size: cover;
+  border: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+.check-input-2:checked {
+  background-color: transparent;
+  background-image: url("../images/check-2-after.svg");
+  background-size: cover;
+  border: none;
+  box-shadow: none;
+}
+
+.check-input-2:focus {
+  border: none;
+  box-shadow: none;
+  outline: none;
+}
+.button-close-modal {
+  right: 4%;
+  top: 5%;
+}
+.modal-image {
+  position: absolute;
+  top: 0;
+  left: -0.12rem;
+  width: 28%;
+  z-index: 0;
+}
+.form-check-4 {
+  width: 75%;
+}
+.text-sucess {
+  width: 75%;
+}
+.sucess-content {
+  padding-top: 5rem !important;
+  padding-bottom: 2rem;
+}
+.form-control3.is-valid,
+.was-validated .form-control3:valid {
+  background: linear-gradient(to bottom, #41637d 0%, #9fc5d1 100%) !important;
 }
 @media (max-width: 1400px) {
   .hero-text {
@@ -1079,6 +1249,10 @@ header {
   .footer-left-img > img {
     width: 50%;
   }
+  .modal-content {
+    padding-left: 5% !important;
+    padding-right: 5% !important;
+  }
 }
 @media (max-width: 992px) {
   .bakkoura-text {
@@ -1213,6 +1387,10 @@ header {
     bottom: -8%;
     right: 0%;
   }
+  .button-close-modal {
+    right: 4%;
+    top: 2%;
+  }
 }
 @media (max-width: 768px) {
   .hero-text {
@@ -1304,6 +1482,27 @@ header {
   }
   .love-text {
     color: #eae9e9;
+  }
+  .modal-content {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
+  .hero-order {
+    font-size: 5rem;
+  }
+  .order-view {
+    position: absolute;
+    font-size: 5rem;
+    top: 5rem;
+  }
+  .form-check-4 {
+    width: 100%;
+  }
+  .text-sucess {
+    width: 100%;
+  }
+  .your-sucess {
+    top: 2.5rem !important;
   }
 }
 @media (max-width: 576px) {
@@ -1794,6 +1993,29 @@ header {
   }
   .text-b-black {
     color: #000000 !important;
+  }
+  .text-order {
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+  }
+  .order-view {
+    font-size: 5rem;
+  }
+  .form-control-row {
+    font-size: 14px;
+  }
+  .form-control-row::placeholder {
+    font-size: 14px;
+  }
+  .text-check-2 {
+    font-size: 14px;
+  }
+  .text-check-2 > span {
+    font-size: 14px;
+  }
+  .check-input-2 {
+    width: 28px;
+    height: 28px;
   }
 }
 

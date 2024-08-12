@@ -558,10 +558,12 @@ document.addEventListener("DOMContentLoaded", function () {
             console.log("SUCCESS!", response.status, response.text);
             form.reset(); // Reset the form
             form.classList.remove("was-validated"); // Remove validation classes
-            successMessage.style.display = "block"; // Show success message
-            setTimeout(function () {
-              successMessage.style.display = "none"; // Hide success message after 5 seconds
-            }, 5000);
+
+            // Show success message modal
+            let successModal = new bootstrap.Modal(
+              document.getElementById("sucess-message-modal")
+            );
+            successModal.show();
           },
           function (error) {
             console.log("FAILED...", error);
@@ -569,11 +571,56 @@ document.addEventListener("DOMContentLoaded", function () {
         );
       }
 
-      form.classList.add("was-validated");
+      form2.classList.add("was-validated");
     },
     false
   );
 });
+var form2 = document.getElementById("order-form");
+var successMessage2 = document.querySelector(".sucess-message");
+
+form2.addEventListener(
+  "submit",
+  function (event) {
+    if (!form2.checkValidity()) {
+      event.preventDefault();
+      event.stopPropagation();
+    } else {
+      event.preventDefault(); // Prevent the default form submission
+      emailjs.sendForm("service_r2ugbk4", "template_7tlcc7b", form2).then(
+        function (response) {
+          console.log("SUCCESS!", response.status, response.text);
+          form2.reset(); // Reset the form
+          form2.classList.remove("was-validated"); // Remove validation classes
+
+          // Show success message modal
+          let successModal = new bootstrap.Modal(
+            document.getElementById("sucess-message-modal")
+          );
+          successModal.show();
+        },
+        function (error) {
+          console.log("FAILED...", error);
+        }
+      );
+    }
+
+    form2.classList.add("was-validated");
+  },
+  false
+);
+
 document.querySelector(".button-ok").addEventListener("click", function () {
   document.querySelector(".cookies").style.display = "none";
+});
+
+document.addEventListener("DOMContentLoaded", function () {
+  const myModal = document.getElementById("exampleModalCenter");
+  const myInput = document.getElementById("myInput");
+
+  if (myModal && myInput) {
+    myModal.addEventListener("shown.bs.modal", () => {
+      myInput.focus();
+    });
+  }
 });

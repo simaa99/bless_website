@@ -1823,7 +1823,7 @@ header {
   .fixed-eye > div > img {
     width: 7rem;
   }
-  .eye-view-gif > video {
+  .eye-view-gif > div > img {
     width: 4rem;
     height: 4rem;
   }

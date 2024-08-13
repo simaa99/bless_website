@@ -507,7 +507,7 @@ header {
 }
 .animate-watch {
   position: absolute;
-  top: -27rem;
+  top: -22rem;
   right: 0%;
 }
 .a-letter-two {
@@ -1019,6 +1019,10 @@ header {
 .was-validated .form-control3:valid {
   background: linear-gradient(to bottom, #41637d 0%, #9fc5d1 100%) !important;
 }
+.bold-textt {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
 @media (max-width: 1400px) {
   .hero-text {
     width: 90%;
@@ -1503,6 +1507,9 @@ header {
   }
   .your-sucess {
     top: 2.5rem !important;
+  }
+  .form-check > label {
+    width: 80%;
   }
 }
 @media (max-width: 576px) {
@@ -2016,6 +2023,9 @@ header {
   .check-input-2 {
     width: 28px;
     height: 28px;
+  }
+  .form-check > label {
+    width: 80%;
   }
 }
 

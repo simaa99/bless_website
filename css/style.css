@@ -507,7 +507,7 @@ header {
 }
 .animate-watch {
   position: absolute;
-  top: -27rem;
+  top: -22rem;
   right: 0%;
 }
 .a-letter-two {
@@ -1018,6 +1018,10 @@ header {
 .form-control3.is-valid,
 .was-validated .form-control3:valid {
   background: linear-gradient(to bottom, #41637d 0%, #9fc5d1 100%) !important;
+}
+.bold-textt {
+  font-size: 1.7rem;
+  font-weight: 700;
 }
 @media (max-width: 1400px) {
   .hero-text {

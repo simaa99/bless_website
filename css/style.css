@@ -995,8 +995,9 @@ header {
   outline: none;
 }
 .button-close-modal {
-  right: 4%;
-  top: 5%;
+  right: 3%;
+  top: 3%;
+  cursor: pointer;
 }
 .modal-image {
   position: absolute;
@@ -1022,6 +1023,20 @@ header {
 .bold-textt {
   font-size: 1.7rem;
   font-weight: 700;
+}
+.btn-close {
+  --bs-btn-close-bg: none !important;
+}
+.logo-bakkoura {
+  position: absolute;
+  top: 1%;
+  right: 0%;
+  left: 0%;
+}
+.bless-logo-bakkoura {
+  position: absolute;
+  left: 3%;
+  top: 3.5%;
 }
 @media (max-width: 1400px) {
   .hero-text {
@@ -2032,6 +2047,10 @@ header {
   }
   .bless-logo > img {
     width: 35%;
+  }
+  .button-close-modal {
+    right: 5%;
+    top: 1.5%;
   }
 }
 

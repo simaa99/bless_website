@@ -1511,6 +1511,9 @@ header {
   .form-check > label {
     width: 80%;
   }
+  .bless-logo > img {
+    width: 20%;
+  }
 }
 @media (max-width: 576px) {
   .bakkoura-text {
@@ -1527,7 +1530,7 @@ header {
   }
   .b-letter {
     top: 30%;
-    right: -10%;
+    right: 0%;
   }
   .top-image {
     width: 100%;
@@ -2026,6 +2029,9 @@ header {
   }
   .form-check > label {
     width: 80%;
+  }
+  .bless-logo > img {
+    width: 35%;
   }
 }
 

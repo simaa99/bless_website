@@ -1038,6 +1038,9 @@ header {
   left: 3%;
   top: 3.5%;
 }
+.dropdown-item {
+  border-radius: 10px !important;
+}
 @media (max-width: 1400px) {
   .hero-text {
     width: 90%;
